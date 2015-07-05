@@ -1,0 +1,22 @@
+{
+  "name": "test-certs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node example/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamestalmage/test-certs.git"
+  },
+  "author": "James Talmage <james@talmage.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamestalmage/test-certs/issues"
+  },
+  "homepage": "https://github.com/jamestalmage/test-certs#readme",
+  "devDependencies": {
+    "semver": "^4.3.6"
+  }
+}
