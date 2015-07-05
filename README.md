@@ -1,7 +1,12 @@
 # test-certs
-set of https certs that expire in 100 years (for tests only).
+set of https certs and keys that expire in 100 years (for tests only).
 
 [![Build Status](https://travis-ci.org/jamestalmage/test-certs.svg?branch=master)](https://travis-ci.org/jamestalmage/test-certs)
+
+Provides a set of keys and certificates for client, server, and certificate authority.
+The Server certificate is for the `localhost` domain name, so you developers can test against their 
+local machine without generating certificate errors (you need to add the CA as a signing authority, see below).
+
 
 ```javascript
 var certs = require('test-certs');
@@ -14,11 +19,11 @@ certs === {
     },
     server: {
         cert: '<Server Certificate>',    // Comes with proper extensions for an HTTP server
-        key: '<Server Private Key>
+        key: '<Server Private Key>'
     },
     client: {         
         cert: '<Client Certificate>',
-        key: '<Client Private Key>
+        key: '<Client Private Key>'
     }
 };
 ```
